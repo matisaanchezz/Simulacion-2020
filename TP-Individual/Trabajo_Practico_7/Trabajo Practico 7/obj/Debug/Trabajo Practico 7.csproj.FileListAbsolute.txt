@@ -1,0 +1,11 @@
+C:\Users\matis\source\repos\Trabajo_Practico_7\Trabajo Practico 7\bin\Debug\Trabajo Practico 7.exe.config
+C:\Users\matis\source\repos\Trabajo_Practico_7\Trabajo Practico 7\bin\Debug\Trabajo Practico 7.exe
+C:\Users\matis\source\repos\Trabajo_Practico_7\Trabajo Practico 7\bin\Debug\Trabajo Practico 7.pdb
+C:\Users\matis\source\repos\Trabajo_Practico_7\Trabajo Practico 7\obj\Debug\Trabajo Practico 7.csprojAssemblyReference.cache
+C:\Users\matis\source\repos\Trabajo_Practico_7\Trabajo Practico 7\obj\Debug\Trabajo_Practico_7.Form1.resources
+C:\Users\matis\source\repos\Trabajo_Practico_7\Trabajo Practico 7\obj\Debug\Trabajo_Practico_7.frm_Tabla.resources
+C:\Users\matis\source\repos\Trabajo_Practico_7\Trabajo Practico 7\obj\Debug\Trabajo_Practico_7.Properties.Resources.resources
+C:\Users\matis\source\repos\Trabajo_Practico_7\Trabajo Practico 7\obj\Debug\Trabajo Practico 7.csproj.GenerateResource.cache
+C:\Users\matis\source\repos\Trabajo_Practico_7\Trabajo Practico 7\obj\Debug\Trabajo Practico 7.csproj.CoreCompileInputs.cache
+C:\Users\matis\source\repos\Trabajo_Practico_7\Trabajo Practico 7\obj\Debug\Trabajo Practico 7.exe
+C:\Users\matis\source\repos\Trabajo_Practico_7\Trabajo Practico 7\obj\Debug\Trabajo Practico 7.pdb

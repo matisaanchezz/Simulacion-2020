@@ -1,0 +1,33 @@
+------------------------------------------TP 7 -----------------------------------------------
+
+
+EVENTOS
+	- llegada cliente	exp(lambda=0.2)	--> 1/0.2 = media = 5 min	x = -5*ln(1-RND)
+	- fin despensa		unif(2.5,3.5)min				x = 2.5 + RND
+	- fin panaderia(i)	unif(3,5)min					x = 3 + RND * 2
+		i=1,2
+	- fin caja		Normal(0.4,1.6) x art				x1 = [raiz(-2*ln(RND1)) * cos(2*pi*RND2)] * desv + media
+				Normal(media,desv)				x2 = [raiz(-2*ln(RND1)) * sen(2*pi*RND2)] * desv + media
+	embolsado pedido	diferencial
+				dE/dt = -0.63E		--> E=28 x1 art
+							--> E=43 x2 art
+							--> E=68 x3 art
+
+OBJETOS
+	- cliente	temp{siendo atendido despensa SAD | esperando atencion despensa EAD |
+				siendo atendido panaderia SAP | esperando atencion panaderia EAP |
+				siendo atendido caja SAC | esperando atencion caja EAC}
+	- despensa	perm{libre | ocupado}
+	- panadero(i)	perm{libre | ocupado}
+	- caja		perm{libre | ocupado}
+
+METRICAS
+	- AC cant articulos por venta
+	- PORCENTAJE de tiempo ocioso de la caja	--> Ac tiempo ocioso caja / reloj
+	- Cola max de despensa y panaderia
+	- PROMEDIO permanencia en cola Panaderia 	--> AC tiempo en cola / cant clientes fin atencion panaderia
+	- PORCENTAJE de tiempo ocioso de la despensa	--> AC tiempo ocioso despensa / reloj
+	- tiempo PROMEDIO de permanencia en el sistema	--> AC tiempo permanencia / cant clientes fin atencion
+
+
+
