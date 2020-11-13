@@ -1,0 +1,40 @@
+Ejercicio 23)
+	Eventos
+		LlegadaCliente	Exp.neg(media=2')
+		Fin Atencion(i)	2min
+			i=1,2
+		Fin Escuchado	Uniforme(3,5)
+
+	Objetos
+		Clientes	Temporal		{EnCola,SiendoAtendido,EnEscucha} 	Atributos: Estado, tiempo de llegada
+		Cajero(i)	Permanente		{Ocupado,Libre}				Atributos: Estado, tiempo inicio de ocio, Cola
+		   i=1,2
+	Colas	
+		Cola para la caja	
+		Cabinas--- asumimos que hay cabinas para todos los clientes que deseen escuchar discos
+		
+	Variables
+		Acumulador de tiempo ocioso de cajero 1
+		Acumulador de tiempo ocioso de cajero 2
+		Acumulador de tiempo de espera en cola
+		Acumulador de clientes atendidos
+		Promedio de tiempo de espera en cola
+	
+
+Acción Cliente	Probabilidad	Desde 	Hasta
+Mirar		0,10		 0,00	 0,10
+Consultar	0,90		 0,10	 1,00
+			
+Consultas	Probabilidad	Desde 	Hasta
+Comprar		0,40		 0,00	 0,40
+Escuchar	0,60		 0,40	 1,00
+			
+Clientes que escucharon	Probabilidad	Desde 	Hasta
+Comprar			0,30		 0,00	 0,30
+Retirarse		0,70		 0,30	 1,00
+
+
+Para resolver este ejercico, vamos a calcular el tiempo ocioso de cada cajero y el tiempo de espera promedio de los 
+clientes en la cola, para poder saber si hacen falta mas cajeros o no. Si la espera en cola es mucha y se acumulan muchos 
+clientes en la cola, se necesitara un cajero mas, al igual que si el tiempo de ocioso es casi nulo, se observa que los 
+cajeros siempre estan ocupados.

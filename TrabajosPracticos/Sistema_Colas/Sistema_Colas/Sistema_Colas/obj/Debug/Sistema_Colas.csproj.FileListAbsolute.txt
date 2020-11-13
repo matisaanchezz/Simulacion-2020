@@ -1,0 +1,11 @@
+C:\Users\matis\Source\Workspaces\Simulacion2020\Sistema_Colas\Sistema_Colas\Sistema_Colas\bin\Debug\Sistema_Colas.exe.config
+C:\Users\matis\Source\Workspaces\Simulacion2020\Sistema_Colas\Sistema_Colas\Sistema_Colas\bin\Debug\Sistema_Colas.exe
+C:\Users\matis\Source\Workspaces\Simulacion2020\Sistema_Colas\Sistema_Colas\Sistema_Colas\bin\Debug\Sistema_Colas.pdb
+C:\Users\matis\Source\Workspaces\Simulacion2020\Sistema_Colas\Sistema_Colas\Sistema_Colas\obj\Debug\Sistema_Colas.csprojAssemblyReference.cache
+C:\Users\matis\Source\Workspaces\Simulacion2020\Sistema_Colas\Sistema_Colas\Sistema_Colas\obj\Debug\Sistema_Colas.Form1.resources
+C:\Users\matis\Source\Workspaces\Simulacion2020\Sistema_Colas\Sistema_Colas\Sistema_Colas\obj\Debug\Sistema_Colas.frmTabla.resources
+C:\Users\matis\Source\Workspaces\Simulacion2020\Sistema_Colas\Sistema_Colas\Sistema_Colas\obj\Debug\Sistema_Colas.Properties.Resources.resources
+C:\Users\matis\Source\Workspaces\Simulacion2020\Sistema_Colas\Sistema_Colas\Sistema_Colas\obj\Debug\Sistema_Colas.csproj.GenerateResource.cache
+C:\Users\matis\Source\Workspaces\Simulacion2020\Sistema_Colas\Sistema_Colas\Sistema_Colas\obj\Debug\Sistema_Colas.csproj.CoreCompileInputs.cache
+C:\Users\matis\Source\Workspaces\Simulacion2020\Sistema_Colas\Sistema_Colas\Sistema_Colas\obj\Debug\Sistema_Colas.exe
+C:\Users\matis\Source\Workspaces\Simulacion2020\Sistema_Colas\Sistema_Colas\Sistema_Colas\obj\Debug\Sistema_Colas.pdb
