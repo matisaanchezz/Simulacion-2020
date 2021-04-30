@@ -1,0 +1,56 @@
+Ejercicio 67)
+
+EVENTOS:
+-------
+
+- llegada_consulta          ExpNeg(30')        X = -30 * LN (1 - RND)
+
+- llegada_urgencia          ExpNeg(90')        X = -90 * LN (1 - RND)
+
+- fin_at_consulta           U(10'; 20')        X = 10 + RND * (20 - 10)
+
+- fin_at_urgencia           U(15'; 30')        X = 15 + RND * (30 - 15)
+
+
+OBJETOS:
+--------
+
+- PACIENTE DE CONSULTA   (temp)   { siendo atendido (SA) | esperando atención (EA) | esperando reanudación (ER) }
+
+- PACIENTE DE URGENCIA   (temp)   { siendo atendido (SA) | esperando atención (EA)}
+
+- MEDICO                 (perm)   { libre (L) | atendiendo consulta (AC) | atendiendo urgencia (AU) }
+
+
+
+Ejercicio 70)
+
+EVENTOS:
+--------
+
+- llegada_cliente        ExpNeg(20')        X = -20 * LN (1-RND)
+
+- fin_atención           U(2'; 4')          X = 2 + RND * (4 - 2)
+
+- fin_reparación         U(7'; 23')         X = 7 + RND * (23 - 7)
+
+
+OBJETOS:
+--------
+
+- CLIENTE          (Temp)  { esperando atención (EA) | dejando zapatos (DZ) | retirando zapatos (RZ) }
+
+- PAR_DE_ZAPATOS   (Temp)  { esperando atención (EA) | siendo reparado (SR) | listo (L) | esperando reanudación (ER) }
+
+- EMPLEADO         (Perm)  { libre (L) | atendiendo cliente (AC) | reparando zapatos (RZ) } 
+
+
+
+
+
+
+
+
+
+
+
