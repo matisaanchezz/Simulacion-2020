@@ -1,0 +1,82 @@
+
+
+EVENTO: Todo hecho o suceso capaz (con el potencial) de modificar el estado de algún objeto del sistema
+
+Estructura para vector de estado:
+
+- Nombre del evento (opcional)
+- Reloj
+- Listado de Eventos del sistema
+- Objetos permanentes
+- Variables estadísticas
+- Objetos temporales
+
+--------------------------------------------
+
+Ejercicio 1)
+
+Eventos: 
+
+- llegada_cliente   Exp.Neg(15')       X = -15 * LN(1-RND)
+- fin_atención      Unif.(8'; 18')     X = 8 + RND * (18 - 8)
+
+Objetos: 
+
+- CLIENTE   (Temporal)   { siendo atendido (SA) | esperando atención (EA) }
+- PELUQUERO (Permanente) { libre (L) | ocupado (Oc) }
+
+---------------------------------------
+
+Ejercicio 3)
+
+EVENTOS:
+
+- llegada_cliente  Exp.Neg. Lambda 15cli / 60 min => 1 cli / 4 min => Media = 4 min    X=-4*LN(1-RND)
+- fin_atención     Unif.(1';5')                                                        X=1+RND*(5-1)
+
+OBJETOS:
+
+- CLIENTE (Temp)  { siendo atendido (SA) | esperando atención (EA) }
+- CAJA    (Perm)  { libre (L) | ocupado (Oc) }
+
+Estadística: acumular los minutos en que la caja está ocupada
+
+---------------------------------------
+
+Ejercicio 4)
+
+EVENTOS:
+
+- llegada_auto  Exp.Neg. Media = 4 min      X=-4*LN(1-RND)
+- fin_atención  Unif.(2';6')                X=1+RND*(5-1)
+
+OBJETOS:
+
+- AUTO      (Temp)  { siendo atendido (SA) | esperando atención (EA) }
+- ENCARGADO (Perm)  { libre (L) | ocupado (Oc) }
+
+Estadística: - Contador total de autos que ingresan al sistema (los cuentan cuando ingresan)
+             - Contador de autos a los que les toca sombra cuando ingresan
+
+---------------------------------------
+
+Ejercicio 7:
+
+EVENTOS:
+
+- llegada_cliente   CTE 2 min
+- fin_atención      1 => 1,5'    2 => 2'   3 => 2,5    4 => 3'
+
+Cant   Frec    P()     P()AC   Desde    Hasta
+----------------------------   ---------------  
+1      15      0.30    0.30    0.00     0.29
+2      20      0.40    0.70    0.30     0.69
+3      10      0.20    0.90    0.70     0.89
+4      5       0.10    1.00    0.90     0.99
+
+OBJETOS:
+- CLIENTE  (Temp)  { siendo atendido (SA) | esperando atención (EA) }
+- EMPLEADO (Perm)  { libre (L) | ocupado (Oc) }
+
+Estadística: contador de clientes con atención finalizada
+

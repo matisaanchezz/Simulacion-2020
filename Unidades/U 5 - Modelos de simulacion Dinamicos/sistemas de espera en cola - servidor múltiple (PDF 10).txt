@@ -1,0 +1,172 @@
+Ejercicio 9)-----------------------------------------------------------------------------------------
+
+EVENTOS:
+--------
+
+- llegada_cliente           Exp.Neg(1')         X = -1 * LN(1-RND)     
+
+- fin_atención(i)	    U(0,5'; 1,5')       X = 0,5 + RND * (1,5 - 0,5)
+       i=1,2
+
+
+OBJETOS:
+--------
+
+- CLIENTE      (Temporal)     { siendo atendido (SA) | esperando atención (EA) }
+
+- EMPLEADO(n)  (Permanente)   { libre | ocupado }
+     n=1,2
+
+
+
+Ejercicio 10) "Estación de servicio"-----------------------------------------------------------------------------------------
+
+EVENTOS
+--------
+
+- llegada_auto               ExpNeg(3')           X = -3 * LN(1-RND)
+
+- fin_atención(i)            U(3';7')             X = 3 + RND * (7 - 3)
+       i=1,2
+
+
+OBJETOS
+--------
+
+- AUTO          (Temporal)     { siendo atendido (SA) | esperando atención (EA) }  
+
+- SURTIDOR(n)   (Permanente)   { libre | ocupado }
+      n=1,2
+
+
+Ejercicio 14) "Despensa y Panadería"-----------------------------------------------------------------------------------------
+
+
+EVENTOS
+--------
+
+- llegada_cliente          ExpNeg: Lambda = 0,2      X = -1/0,2 * LN(1-RND)
+
+- fin_despensa             U(2,5'; 3,5')             X = 2,5 + RND * (3,5 - 2,5)
+
+- fin_panaderia(i)	   U(3'; 5')		     X = 3 + RND * (5 - 3)
+        i=1,2
+
+- fin_caja                 U(0,4'; 1,6')             X = 0,4 + RND * (1,6 - 0,4)
+
+
+OBJETOS
+--------
+
+- CLIENTE        (Temp)    { SiendoAt. Despensa (SAD)  | EsperandoAt. Despensa (EAD) | 
+                             SiendoAt. Panadería (SAP) | EsperandoAt. Panadería EAP  | 
+                             SiendoAt Caja (SAC)       | EsperandoAt. Caja (EAC) }
+
+- DESPENSA      (Perm)  { Libre | Ocupado }
+
+- PANADERIA(n)  (Perm)  { Libre | Ocupado }
+    n = 1,2
+
+- CAJA          (Perm)  { Libre | Ocupado }
+
+
+Ejercicio 15)-----------------------------------------------------------------------------------------
+
+EVENTOS:
+--------
+
+- llegada_persona     cte = 60" segs
+
+- fin_cobro(i)        cte = 180" segs
+    i = 1,2,3
+
+- fin_actualizacion   cte = 40" segs
+
+- fin_informe         cte = 20" segs
+
+OBJETOS:
+--------
+
+- PERSONA     (temp)     { siendo atendido CAJA (SAC)      | esperando atención CAJA (EAC) |
+                           siendo atendido VENTANILLA (SAV)| esperando atención VENTANILLA (EAV) |
+                           siendo atendido INFORMES (SAI)  | esperando atención INFORMES (EAI) }
+
+- CAJA(n)     (perm)     { libre | ocupada }
+  n = 1,2,3
+
+- VENTANILLA  (perm)     { libre | ocupada }
+
+- INFORMES    (perm)     { libre | ocupado }
+
+
+Ejercicio 16)-----------------------------------------------------------------------------------------
+
+EVENTOS:
+--------
+
+- llegada_cliente      U(7'; 11')        X = 7 + RND * (11 - 7)
+
+- fin_venta(i)         U(8'; 12')        X = 8 + RND * (12 - 8)
+     i=1,2
+
+- fin_reparto(i)       cte 10' por cada artículo a repartir
+     i=1,2,3,4
+
+
+OBJETOS:
+--------
+
+- CLIENTE        (temp)    { siendo atendido (SA) | esperando atención (EA) }
+
+- VENDEDOR(n)    (perm)    { libre | ocupado }
+     n=1,2
+
+- ARTÍCULO       (temp)    { siendo repartido (SR) | esperando reparto (ER) }
+
+** Aclaración: la hora de inicio de reparto empieza a contar 
+               a partir del evento "fin_venta" que generó al artículo
+
+- FURGON         (perm)    { libre | ocupado }
+
+
+Ejercicio 24)-----------------------------------------------------------------------------------------
+
+EVENTOS:
+--------
+
+- llegada_persona    ExpNeg(10')     X = -10 * LN (1-RND)
+
+- fin_recepción(i)   U(3'; 7')       X = 3 + RND * (7 - 3) 
+        i = 1,2
+
+- fin_clasificacion(i)  cte = 1'
+      i = 1,..,n
+
+OBJETOS:
+--------
+
+- PERSONA       (temp)   { siendo atendido (SA) | esperando atención (EA) }
+
+- RECEPTOR(n)   (perm)   { libre | ocupado }
+   n=1,2
+
+- SIST.INF      (perm)   { disponible }
+
+- AVISO         (temp)   { siendo clasificado (SC) }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
